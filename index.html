@@ -70,23 +70,22 @@
             <a href="index.html" class="btn">View Project</a>
         </div>
     </section>
-
-    <section id="contact">
+ <section id="contact">
         <h2>Contact Me</h2>
-        <form action="submit_form.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="message">Type your Message Here:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-        <input type="submit" value="Submit">
-    </form>
+            <button type="submit">Send</button>
+            <p id="form-message"></p>
+        </form>
     </section>
-
     <footer>
         <p>&copy; 2024 Pranav Pai N. All Rights Reserved.</p>
         <p>Updated Few Time Ago....</p><br>
