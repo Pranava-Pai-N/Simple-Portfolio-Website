@@ -561,9 +561,6 @@ fieldset {
 }
 
 #about h2{
-    justify-content:centre;
-    align-items:centre;
-    display:flex;
     cursor:pointer;
     color:black;
 }
