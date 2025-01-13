@@ -563,7 +563,7 @@ fieldset {
 #about h2{
     cursor:pointer;
     color:black;
-    font-weight:50;
+    font-weight:450;
 }
 
 #about h2:hover{
