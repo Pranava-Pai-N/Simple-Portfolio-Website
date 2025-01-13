@@ -21,6 +21,18 @@ nav {
     color: white;
 }
 
+.logo a{
+    inherit:parent;
+    text-decoration:none;
+}
+
+.logo a:hover{
+    color:red:
+    font-family:gill-sans;
+    font-weight:bolder;
+}
+
+
 nav ul {
     display: flex;
     list-style: none;
