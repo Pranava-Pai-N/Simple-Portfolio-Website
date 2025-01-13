@@ -82,6 +82,15 @@ header .btn {
     text-align: center;
     list-style: none;
     content:"*" ;
+    
+}
+.skill a{
+    text-decoration:none;
+    color: inherit
+}
+
+.skill a:hover{
+color:red;
 }
 
 #projects {
