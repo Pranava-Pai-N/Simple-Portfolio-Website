@@ -547,27 +547,32 @@ fieldset {
   color: var(--color-text-muted);
 }
 
-.raw{
+#about p{
     justify-content:centre;
     align-items:centre;
-    dispay:flex;
+    display:flex;
     cursor:pointer;
 }
 
-.raw:hover{
-    color:red:
-    cursor:pointer;
-    }
-
-.about:hover{
-    color:green;
+#about p:hover{
     font-weight:bolder;
     cursor:pointer;
+    color:red;
 }
 
+#about h2{
+    justify-content:centre;
+    align-items:centre;
+    display:flex;
+    cursor:pointer;
+    color:black;
+}
 
-
-
+#about h2:hover{
+    color:green;
+    cursor:pointer;
+    font-weight:bolder;
+}
 
 
 footer {
