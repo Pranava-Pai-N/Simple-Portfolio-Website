@@ -8,9 +8,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #f4f4f4;
-    color: #333;
+    background: #121212;
+    color: #fff;
     transition: all 0.5s ease;
+    background-image: linear-gradient(45deg, #ff007f, #7a00ff, #00ff9f);
+    background-size: 300% 300%;
+    animation: rgbShift 5s ease infinite;
 }
 
 nav {
@@ -18,7 +21,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-    background: #333;
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     animation: fadeIn 1s ease-out;
 }
@@ -30,7 +33,7 @@ nav {
 }
 
 .logo a:hover {
-    color: red;
+    color: #ff6f61;
     font-family: 'Gill Sans', sans-serif;
     font-weight: bolder;
 }
@@ -58,7 +61,7 @@ nav ul li a {
 header {
     text-align: center;
     padding: 100px 0;
-    background: #333;
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     animation: fadeInUp 1.5s ease-out;
 }
@@ -66,11 +69,13 @@ header {
 header h1 {
     font-size: 3em;
     animation: slideIn 1s ease-out;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5);
 }
 
 header p {
     font-size: 1.2em;
     margin: 10px 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 header .btn {
@@ -80,24 +85,27 @@ header .btn {
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 header .btn:hover {
     background: #ff6f61;
     transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 0, 0, 0.5);
 }
 
 #about {
     padding: 50px 20px;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
     animation: fadeInUp 1s ease-out;
 }
 
 #skills {
     padding: 50px 20px;
-    background: #f4f4f4;
+    background: rgba(0, 0, 0, 0.8);
     animation: fadeInUp 1s ease-out;
 }
 
@@ -109,7 +117,7 @@ header .btn:hover {
 }
 
 .skill {
-    background: #fff;
+    background: #333;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
@@ -130,25 +138,27 @@ header .btn:hover {
 }
 
 .skill a:hover {
-    color: red;
+    color: #ff6f61;
 }
 
 #projects {
     padding: 50px 20px;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.7);
     animation: fadeInUp 1s ease-out;
 }
 
 .project {
-    background: #f4f4f4;
+    background: #444;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .project:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.5);
 }
 
 .project .btn {
@@ -162,12 +172,14 @@ header .btn:hover {
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .project .btn:hover {
     background: linear-gradient(45deg, #2575fc, #6a11cb);
     color: #fff;
     transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .project .btn::before {
@@ -187,11 +199,11 @@ header .btn:hover {
 }
 
 #contact {
-    background: #fff;
+    background: rgba(0, 0, 0, 0.8);
     padding: 40px;
     max-width: 600px;
     margin: 50px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     animation: fadeInUp 1s ease-out;
 }
@@ -201,6 +213,7 @@ h2 {
     margin-bottom: 20px;
     font-size: 2em;
     animation: fadeIn 1.5s ease-out;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
 form {
@@ -225,8 +238,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border-color: #f4b400;
-    box-shadow: 0 0 5px rgba(244, 180, 0, 0.5);
+    border-color: #ff6f61;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
 
 button {
@@ -237,11 +250,13 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 button:hover {
     background: #0056b3;
     transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
 }
 
 footer {
@@ -286,5 +301,26 @@ footer p {
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes rgbShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
     }
 }
