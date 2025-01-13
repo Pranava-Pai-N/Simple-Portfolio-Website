@@ -547,8 +547,23 @@ fieldset {
   color: var(--color-text-muted);
 }
 
+.raw{
+    justify-content:centre;
+    align-items:centre;
+    dispay:flex;
+    cursor:pointer;
+}
 
+.raw:hover{
+    color:red:
+    cursor:pointer;
+    }
 
+.about:hover{
+    color:green;
+    font-weight:bolder;
+    cursor:pointer;
+}
 
 
 
