@@ -89,7 +89,6 @@ header .btn {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     animation: glow 1.5s ease-in-out infinite alternate;
     font-family:'Poppins', sans-serif;
-    font-weight:800;
 }
 
 header .btn:hover {
