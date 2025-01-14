@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranava Pai N || Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pranava Pai N || Simple Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_FQgtslJsa3BcsZMe9NpBCgjrfKKuzVLUUw&s">
-</head>
-<body>
+
     <nav>
         <div class="logo"><a target="_blank" href="https://github.com/Pranava-Pai-N">Pranava Pai N</a></div>
         <ul>
@@ -20,13 +20,15 @@
 
     <header>
         <h1>Hello, I'm Pranava Pai N</h1>
-        <p>A 2nd Year Engineering Student | Aspiring Web Developer | Tech Enthusiast</p>
-        <a target="_blank" href="https://linkedin.com/in/pranav-pai-n-563106292" class="btn">Let's Connect</a>
+        <p>A 2nd Year Engineering Student | Aspiring Web Developer | Tech Enthusiast</p><br>
+        <a target="_blank" href="https://in.linkedin.com/in/pranav-pai-n-563106292" class="btn">Let's Connect</a>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a 2nd-year engineering student at Sahyadri College of Engineering and Management, with interests in web development, open-source projects, and tech innovations.</p>
+        <p>
+            I am a 2nd-year engineering student at Sahyadri College of Engineering and Management. I have a deep interest in web development, open-source projects, and learning new technologies. I’m passionate about solving problems and constantly improving my skills.
+        </p>
     </section>
 
     <section id="skills">
@@ -38,7 +40,7 @@
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Tailwind CSS</li>
-                </ul>
+               </ul>
             </div>
             <div class="skill">
                 <h3>Backend</h3>
@@ -52,9 +54,9 @@
                 <h3>Tools & Platforms</h3>
                 <ul>
                     <li>Git</li>
-                    <li>GitHub</li>
-                    <li>Hackerrank</li>
-                    <li>Leetcode</li>
+                    <li><a target="blank" href="https://github.com/Pranava-Pai-N">GitHub</a></li>
+                    <li><a target="blank" href ="https://www.hackerrank.com/profile/pranavpai0309">Hackerrank</a></li>
+                    <li><a target="blank" href ="https://leetcode.com/u/Pranav_pai/">Leetcode</a></li>
                 </ul>
             </div>
         </div>
@@ -63,27 +65,53 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>A personal portfolio website to showcase skills and projects.</p>
-            <a href="#" class="btn">View Project</a>
+            <h3>Project 1: Portfolio Website</h3>
+            <p>Designed and developed a personal portfolio website using HTML, CSS, and JavaScript to showcase my skills and projects.</p><br>
+            <a href="index.html" class="btn">View Project</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 2: Global Digital Bank</h3>
+            <p>It is a user-friendly banking application built using Python.</p><br>
+            <a href="https://github.com/Pranava-Pai-N/Global_Digital_Bank_Python" class="btn" target="_blank">View Project</a>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/xlddzwbr" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" class="btn">Submit</button>
+        <form action="https://formspree.io/f/xlddzwbr" class="fs-form" target="_top" method="POST">
+            <div class="fs-field">
+                <label class="fs-label" for="name">Your Name</label>
+                <input class="fs-input" id="name" name="name" required />
+            </div>
+            <div class="fs-field">
+                <label class="fs-label" for="email">Email</label>
+                <input class="fs-input" id="email" name="email" required />
+                <p class="fs-description">
+                    Helps me reply at the earliest
+                </p>
+            </div>
+            <div class="fs-field">
+                <label class="fs-label" for="message">Your Message/Feedback</label>
+                <textarea class="fs-textarea" id="message" name="message" required></textarea>
+                <p class="fs-description">If you want any changes, just reach out to me.</p>
+            </div>
+            <div class="fs-button-group">
+                <button class="fs-button" type="submit">Submit</button>
+            </div>
         </form>
     </section>
 
+  
+    <div class="fab" onclick="window.scrollTo(0, 0)">
+        ↑
+    </div>
+
     <footer>
-        <p>&copy; 2025 Pranav Pai N. All rights reserved.</p>
+        <p>&copy; 2025 Pranav Pai N. All Rights Reserved.</p>
+        <p>Updated Few Times Ago....</p><br>
+        <p>Work In Progress. Thank you for Visiting.</p>
     </footer>
+
 </body>
 </html>
