@@ -413,31 +413,50 @@ footer p {
 }
 
 
-.textful {
-    font-size: 2rem; 
-    font-weight: bold;
-    background: #f6f6f6;
-    background-image: linear-gradient(45deg, #ff6f61, #ffcc00, #28a745);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: fillAnimation 2s ease-out infinite;
-    color: transparent; 
-}
-
-@keyframes fillAnimation {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-}
-
 #back-to-top:hover {
     background: #0056b3;
     transform: scale(1.1);
+}
+
+
+.textful {
+    font-size: 2rem; 
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 2px;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+.textful::before,
+.textful::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.textful::before {
+    color: #ff00ff;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+.textful::after {
+    color: #00ff00;
+    animation: neonGlow 1.5s ease-in-out infinite alternate 0.5s;
+}
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+    }
+    100% {
+        text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00;
+    }
 }
