@@ -88,7 +88,8 @@ header .btn {
     transition: all 0.3s ease;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     animation: glow 1.5s ease-in-out infinite alternate;
-    font-family:Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
+    font-weight:800;
 }
 
 header .btn:hover {
@@ -262,7 +263,7 @@ button {
     cursor: pointer;
     transition: background 0.3s, transform 0.3s ease;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    font-family:'Roboto', sans-serif;
+    font-family:'Poppins', sans-serif;
     font-weight:800;
 }
 
