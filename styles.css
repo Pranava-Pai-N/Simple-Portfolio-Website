@@ -423,7 +423,6 @@ footer p {
     font-size: 2.5rem; 
     font-weight: bold;
     text-align: center;
-    text-transform: uppercase;
     color: #fff;
     position: relative;
     display: inline-block;
@@ -466,10 +465,9 @@ footer p {
 
 
 .textfull {
-    font-size: 1.5rem; 
+    font-size: 1.25rem; 
     font-weight: bold;
     text-align: center;
-    text-transform: uppercase;
     color: #fff;
     position: relative;
     display: inline-block;
