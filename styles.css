@@ -147,6 +147,14 @@ header .btn:hover {
     animation: fadeInUp 1s ease-out;
 }
 
+.skill ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+
+
 .project {
     background: #444;
     padding: 20px;
