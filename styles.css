@@ -412,6 +412,16 @@ footer p {
     visibility: visible;
 }
 
+
+.textful {
+    font-size: 72px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6f61, #ffcc00, #28a745);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
 #back-to-top:hover {
     background: #0056b3;
     transform: scale(1.1);
