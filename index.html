@@ -17,7 +17,8 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+    
+    <div id="neonClock"></div>
     <header>
         <h1 class="textful">Hello, I'm Pranava Pai N</h1>
         <p id="typingEffect" class="textfull"></p><br></br>
@@ -140,6 +141,17 @@
         window.onload = function() {
         setTimeout(typeWriter, 1000);
     };
+function updateClock() {
+    const clockElement = document.getElementById('neonClock');
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+  }
+
+  setInterval(updateClock, 1000); 
+  updateClock(); 
 </script>
 
     <footer>
