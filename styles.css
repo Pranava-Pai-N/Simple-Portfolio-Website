@@ -24,6 +24,7 @@ nav {
     background: rgba(0, 0, 0, 0.8);
     color: white;
     animation: fadeIn 1s ease-out;
+    position:sticky;
 }
 
 .logo a {
