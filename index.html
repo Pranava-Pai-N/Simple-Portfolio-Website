@@ -106,25 +106,18 @@
         <p>Updated Few Minutes Ago....</p><br>
         <p>Work In Progress. Thank you for Visiting.</p>
     </footer>
-<script>
-    document.addEventListener('mousemove', function (e) {
-        createParticle(e.clientX, e.clientY);
+ <script>
+    document.addEventListener('mousemove', function(e) {
+      let particle = document.createElement('div');
+      particle.classList.add('particle');
+      particle.style.left = e.pageX + 'px';
+      particle.style.top = e.pageY + 'px';
+      document.body.appendChild(particle);
+      setTimeout(() => {
+        particle.remove();
+      }, 1000);  
     });
-
-    function createParticle(x, y) {
-        const particle = document.createElement('div');
-        particle.className = 'particle';
-        particle.style.left = `${x}px`;
-        particle.style.top = `${y}px`;
-
-        document.body.appendChild(particle);
-
-        // Remove particle after animation
-        setTimeout(() => {
-            particle.remove();
-        }, 1000);
-    }
-</script>
+  </script>
 
 </body>
 </html>
