@@ -514,7 +514,7 @@ footer p {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   margin: 20px 0;
-  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor;
+  text-shadow: 0 0 3px currentColor, 0 0 5px currentColor, 0 0 8px currentColor, 0 0 10px currentColor;
   font-weight:bolder;
   color: #00FFFF;
 }
