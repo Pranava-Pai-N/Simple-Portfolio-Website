@@ -567,30 +567,3 @@ footer p {
         opacity: 1;
     }
 }
-
-#views {
-    text-align: center;
-    margin-top: 50px;
-    font-family: Arial, sans-serif;
-}
-
-#views h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-#viewCount {
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: #ff5733; 
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, color 0.3s ease; 
-}
-
-#viewCount:hover {
-    color: #28a745;
-    transform: scale(1.1); 
-    cursor: pointer; 
-}
-
