@@ -160,8 +160,13 @@
 
 setInterval(updateClock, 100); 
 updateClock();
-
-
+let viewCount = localStorage.getItem('viewCount');
+if (!viewCount) {
+    viewCount = 0;
+}
+viewCount++;
+localStorage.setItem('viewCount', viewCount);
+document.getElementById('viewCount').textContent = viewCount;
 </script>
 
     <footer>
@@ -169,6 +174,10 @@ updateClock();
         <p>Updated Few Minutes Ago....</p><br>
         <p>Work In Progress. Thank you for Visiting.</p>
         <div id="neonClock"></div>
+    <section id="views">
+    <h2>Page Views</h2>
+    <p id="viewCount">0</p>
+</section>
     </footer>
 </body>
 </html>
