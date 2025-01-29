@@ -166,31 +166,6 @@
 
 setInterval(updateClock, 100); 
 updateClock();
-function createBalloon() {
-    const balloon = document.createElement('div');
-    balloon.classList.add('balloon');
-    balloon.style.width = `${Math.random() * 50 + 20}px`; // Random size between 20px to 70px
-    balloon.style.height = balloon.style.width;
-    balloon.style.top = `${Math.random() * 100 + 30}%`; // Random position vertically
-    balloon.style.left = `${Math.random() * 100}%`; // Random position horizontally
-    balloon.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`; // Random color
-    
-    document.body.appendChild(balloon);
-    
-    // Remove balloon after animation is complete
-    setTimeout(() => {
-        balloon.remove();
-    }, 2000); // Balloons will be removed after the animation duration
-}
-
-function startBalloonBlast() {
-    setInterval(createBalloon, 2000); // Create a balloon every 2 seconds
-}
-
-window.onload = function() {
-    setTimeout(startBalloonBlast, 120); // Start balloon blast every 2 minutes
-};
-
 </script>
 
     <footer>
