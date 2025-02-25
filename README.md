@@ -1,4 +1,4 @@
-# Pranav Pai N - Portfolio Website
+# Pranava Pai N - Simple Portfolio Website
 
 Welcome to my personal portfolio website! This site showcases my projects, skills, and experiences in web development and engineering.
 
@@ -9,7 +9,7 @@ Welcome to my personal portfolio website! This site showcases my projects, skill
 - Fully responsive and modern UI
 - Showcases projects with descriptions and live links
 - About Me section highlighting skills and background
-- Contact form for inquiries
+- Contact form for inquiries using Formspree
 - Smooth scrolling and interactive animations
 
 ## 🛠️ Tech Stack
