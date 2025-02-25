@@ -49,5 +49,6 @@ Feel free to connect with me:
 
 ---
 💡 You are welcome to fork this project, tweak it to your liking, and make it your own! If you find it useful, dropping a ⭐ on GitHub would be greatly appreciated!
+
 Thank you for visiting my portfolio! 🚀
 
