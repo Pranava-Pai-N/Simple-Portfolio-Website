@@ -43,9 +43,9 @@ The website is deployed on Vercel. To deploy manually:
 
 ## 📧 Contact
 Feel free to connect with me:
-- **Email:** <a href="mailto:pranavpai0309@gmail.com">Gmail</a>
-- **GitHub:** <a href="https://github.com/Pranava-Pai-N" target="_blank">GitHub</a>
-- **LinkedIn:** <a href="https://www.linkedin.com/in/pranav-pai-n-563106292" target="_blank">LinkedIn</a>
+- **Email :** <a href="mailto:pranavpai0309@gmail.com">Gmail</a>
+- **GitHub :** <a href="https://github.com/Pranava-Pai-N" target="_blank">GitHub</a>
+- **LinkedIn :** <a href="https://www.linkedin.com/in/pranav-pai-n-563106292" target="_blank">LinkedIn</a>
 
 ---
 Thank you for visiting my portfolio! 🚀
