@@ -48,5 +48,6 @@ Feel free to connect with me:
 - **LinkedIn :** <a href="https://www.linkedin.com/in/pranav-pai-n-563106292" target="_blank">LinkedIn</a>
 
 ---
+💡 You are welcome to fork this project, tweak it to your liking, and make it your own! If you find it useful, dropping a ⭐ on GitHub would be greatly appreciated!
 Thank you for visiting my portfolio! 🚀
 
