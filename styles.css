@@ -134,32 +134,47 @@ header .btn:hover {
 
 
 #skills {
-    padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.8);
-    animation: fadeInUp 1s ease-out;
+    text-align: center;
+    padding: 50px;
+    background: #0d1117;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg, #ff6f61, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .skills-container {
-    display: flex;
-    justify-content: space-around;
+   display: flex;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
-    list-style: none;
 }
 
 .skill {
-    background: #333;
-    padding: 20px;
-    margin: 10px;
+     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    width: 30%;
+    padding: 20px;
+    width: 300px;
     text-align: center;
-    list-style: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 4px 15px rgba(255, 111, 97, 0.5);
 }
 
 .skill:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
 }
 
 .skill a {
@@ -171,6 +186,24 @@ header .btn:hover {
     color: #ff6f61;
 }
 
+.skill::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(60deg, rgba(255, 111, 97, 0.4), rgba(255, 204, 0, 0.4));
+    transform: rotate(0deg);
+    animation: glowing 6s linear infinite;
+}
+
+.skill h3 {
+    font-size: 1.6rem;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
 #projects {
     padding: 50px 20px;
     background: rgba(0, 0, 0, 0.7);
@@ -178,14 +211,27 @@ header .btn:hover {
 }
 
 .skill ul{
-    list-style-type:none;
-    padding:0;
-    margin:0;
+    list-style: none;
+    padding: 0;
+}
+
+.skill ul li {
+    font-size: 1.1rem;
+    padding: 8px;
+    transition: transform 0.3s;
 }
 
 .skill ul li:hover{
-    color:#ff6f61;
+   transform: translateX(10px);
+   color: #ff6f61;
+   font-weight: bold;
 }
+
+@keyframes glowing {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 
 .project {
     background: #444;
