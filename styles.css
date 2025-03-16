@@ -43,6 +43,13 @@ nav {
     filter: brightness(1);
 }
 
+.profile-buttons .btn {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+
 .logo a {
     text-decoration: none;
     color: inherit;
