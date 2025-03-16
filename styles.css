@@ -125,13 +125,56 @@ header .btn:hover {
 }
 
 #about {
-    padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.7);
     text-align: center;
-    animation: fadeInUp 1s ease-out;
+    padding: 60px 20px;
+    background: #0d1117;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 
+#about h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg, #ff6f61, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+#about p:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 111, 97, 0.5);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 #skills {
     text-align: center;
