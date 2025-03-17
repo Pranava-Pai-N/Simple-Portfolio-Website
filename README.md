@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! This site showcases my projects, skills, and experiences in web development and engineering.
 
 ## 🚀 Live Demo
-[Visit My Portfolio](https://portfoliowebsite-git-main-pranav-pais-projects.vercel.app/)
+<a href="https://portfoliowebsite-git-main-pranav-pais-projects.vercel.app/" target="_blank">Visit My Portfolio Website</a>
 
 ## 📌 Features
 - Fully responsive and modern UI
@@ -43,10 +43,12 @@ The website is deployed on Vercel. To deploy manually:
 
 ## 📧 Contact
 Feel free to connect with me:
-- **Email:** [Your Email to - ](mailto:pranavpai0309@gmail.com)
-- **GitHub:** [github.com/Pranava-Pai-N](https://github.com/Pranava-Pai-N)
-- **LinkedIn:** [linkedin.com/in/Pranav Pai N](https://www.linkedin.com/in/pranav-pai-n-563106292)
+- **Email :** <a href="mailto:pranavpai0309@gmail.com">Gmail</a>
+- **GitHub :** <a href="https://github.com/Pranava-Pai-N" target="_blank">GitHub</a>
+- **LinkedIn :** <a href="https://www.linkedin.com/in/pranav-pai-n-563106292" target="_blank">LinkedIn</a>
 
 ---
+💡 You are welcome to fork this project, tweak it to your liking, and make it your own! If you find it useful, dropping a ⭐ on GitHub would be greatly appreciated!
+
 Thank you for visiting my portfolio! 🚀
 
