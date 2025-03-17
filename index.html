@@ -236,58 +236,6 @@
         }
     }
 
-    document.querySelectorAll('.tech-carousel img').forEach(img => {
-    img.addEventListener('mouseover', function() {
-        let tooltip = document.createElement('div');
-        tooltip.className = 'tooltip';
-        tooltip.innerText = this.getAttribute('data-tooltip');
-        document.body.appendChild(tooltip);
-
-        let rect = this.getBoundingClientRect();
-        tooltip.style.left = `${rect.left + window.scrollX + rect.width / 2}px`;
-        tooltip.style.top = `${rect.top + window.scrollY - 30}px`;
-
-        this.addEventListener('mouseleave', () => {
-            tooltip.remove();
-        });
-    });
-});
-
-document.addEventListener("mousemove", function (e) {
-    createParticle(e.clientX, e.clientY);
-});
-
-function createParticle(x, y) {
-    const particle = document.createElement("div");
-    particle.classList.add("particle");
-    document.getElementById("particle-container").appendChild(particle);
-
-    particle.style.left = `${x}px`;
-    particle.style.top = `${y}px`;
-
-    let size = Math.random() * 10 + 4; 
-    particle.style.width = `${size}px`;
-    particle.style.height = `${size}px`;
-
-    let hue = Math.random() * 360; 
-    particle.style.background = `radial-gradient(circle, hsl(${hue}, 100%, 70%), transparent)`;
-
-    let angle = Math.random() * 2 * Math.PI;
-    let speed = Math.random() * 6 + 2;
-    let xMove = Math.cos(angle) * speed;
-    let yMove = Math.sin(angle) * speed;
-
-    setTimeout(() => {
-        particle.style.transform = `translate(${xMove}px, ${yMove}px) scale(0.5)`;
-        particle.style.opacity = "0";
-    }, 10);
-
-    setTimeout(() => {
-        particle.remove();
-    }, 500);
-}
-
-
     function deleteWriter() {
         if (charIndex > 0) {
             currentText = currentText.substring(0, currentText.length - 1);
