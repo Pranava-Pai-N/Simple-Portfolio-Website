@@ -723,7 +723,7 @@ footer p {
   margin: 20px 0;
   text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor;
   font-weight:bolder;
-  color: #cc3300;
+  color: #FFB200;
 }
 
 
@@ -772,5 +772,169 @@ footer p {
     }
     100% {
         opacity: 1;
+    }
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tech-carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    padding-left: 5em;
+    padding-right: 5em;;
+}
+
+.tech-carousel img {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.tech-carousel img:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.tech-carousel img::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.tech-carousel-inner {
+    display: flex;
+    gap: 35px; 
+    animation: scroll 90s linear infinite;
+    width: max-content;
+}
+
+.tech-carousel-inner::after {
+    content: "";
+    display: block;
+}
+
+.tech-carousel-inner img {
+    height: 70px;
+    width: auto;
+    display: inline-block;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.tech-carousel-inner img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+#particle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, #ff007f, transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-200vh);
     }
 }
