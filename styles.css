@@ -851,7 +851,7 @@ footer p {
 .tech-carousel-inner {
     display: flex;
     gap: 35px; 
-    animation: scroll 35s linear infinite;
+    animation: scroll 90s linear infinite;
     width: max-content;
 }
 
