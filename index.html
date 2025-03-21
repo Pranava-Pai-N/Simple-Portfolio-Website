@@ -20,7 +20,8 @@
             <img src="https://static.vecteezy.com/system/resources/previews/046/437/248/non_2x/github-logo-transparent-background-free-png.png" alt="GitHub">
         </a>
     </div>
-    <ul>
+    <div class="menu-toggle">&#9776;</div>
+    <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -328,6 +329,9 @@ updateClock();
         const carouselItems = carouselInner.innerHTML;
         carouselInner.innerHTML += carouselItems; 
     });
+document.querySelector(".menu-toggle").addEventListener("click", function () {
+    document.querySelector("nav ul").classList.toggle("show");
+});
 </script>
 
     <footer>
