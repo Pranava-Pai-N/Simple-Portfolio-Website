@@ -21,10 +21,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
+    padding: 1em;
     background: rgba(0, 0, 0, 0.8);
     color: white;
+    position:relative;
     animation: fadeIn 1s ease-out;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
 }
 
 .profile-buttons {
@@ -146,6 +154,11 @@ header .btn:hover {
     animation: fadeIn 1.5s ease-in-out;
 }
 
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
 #about h2 {
     font-size: 2.5rem;
