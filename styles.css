@@ -14,7 +14,7 @@ body {
     background-image: linear-gradient(45deg, #ff007f, #7a00ff, #00ff9f);
     background-size: 300% 300%;
     animation: rgbShift 5s ease infinite;
-    cursor: url('Mouse.ico'),pointer;
+    cursor: url('assets/Mouse.ico'),pointer;
 }
 
 nav {
@@ -30,7 +30,7 @@ nav {
 .profile-buttons {
     display: flex;
     gap: 15px;
-    cursor: url('Mouse.ico'),pointer;
+    cursor: url('assets/Mouse.ico'),pointer;
 }
 
 .profile-buttons .btn img {
@@ -38,13 +38,13 @@ nav {
     height: 32px;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     filter: brightness(0.8);
-    cursor: url('Mouse.ico'),pointer;
+    cursor: url('assets/Mouse.ico'),pointer;
 }
 
 .profile-buttons .btn img:hover {
     transform: scale(1.2);
     filter: brightness(1);
-    cursor: url('Mouse.ico'),pointer;
+    cursor: url('assets/Mouse.ico'),pointer;
     
 }
 
@@ -123,7 +123,7 @@ header .btn {
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
-    cursor: url('Mouse.ico'),pointer;
+    cursor: url('assets/Mouse.ico'),pointer;
     transition: all 0.3s ease;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     animation: glow 1.5s ease-in-out infinite alternate;
@@ -474,7 +474,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    cursor: url('Mouse.ico'),pointer;
+    cursor: url('assets/Mouse.ico'),pointer;
     transition: background 0.3s, transform 0.3s ease;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     font-family:'Poppins', sans-serif;
@@ -564,7 +564,7 @@ footer p {
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    cursor: url('Mouse.ico'),pointer;
+    cursor: url('assets/Mouse.ico'),pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -620,7 +620,7 @@ footer p {
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
-    cursor: url('Mouse.ico'),pointer;
+    cursor: url('assets/Mouse.ico'),pointer;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -879,7 +879,7 @@ footer p {
 
 .tech-carousel-inner img:hover {
     transform: scale(1.1);
-    cursor: url('Mouse.ico'),pointer;
+    cursor: url('assets/Mouse.ico'),pointer;
 }
 
 @keyframes scroll {
