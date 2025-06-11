@@ -14,13 +14,15 @@ Welcome to my personal portfolio website! This site showcases my projects, skill
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML, CSS, JavaScript
-- **Deployment:** Vercel
+- **Deployment:** Netlify
 
 ## 📂 Project Structure
 ```
 ├── index.html   # Main HTML file + Internal JS
 ├── styles.css   # Main CSS File
-├── .gitignore       # Git ignore file
+├── Assets
+   ├── Project Thumbnails
+   ├── Static Images
 ├── README.md        # Project documentation
 ```
 
@@ -36,9 +38,9 @@ Welcome to my personal portfolio website! This site showcases my projects, skill
 3. Open `index.html` in your browser.
 
 ## 🚀 Deployment
-The website is deployed on Vercel. To deploy manually:
+The website is deployed on Netlify. To deploy manually:
 1. Push your code to GitHub.
-2. Connect the repository to Vercel.
+2. Connect the repository to Netlify.
 3. Deploy with a single click.
 
 ## 📧 Contact
