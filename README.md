@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! This site showcases my projects, skills, and experiences in web development and engineering.
 
 ## 🚀 Live Demo
-<a href="https://pranavatech.netlify.app" target="_blank">Visit My Portfolio Website</a>
+<a href="https://simple-portfolio-website-iota.vercel.app" target="_blank">Visit My Portfolio Website</a>
 
 ## 📌 Features
 - Fully responsive and modern UI
